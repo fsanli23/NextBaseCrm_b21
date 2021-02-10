@@ -1,6 +1,21 @@
 package com.nextBaseCrm.tests.US7_SeePostHomePage;
 
+import com.nextBaseCrm.pages.PostPage;
+import com.nextBaseCrm.utilities.LoginToWebsite;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 public class LikeFollowEyeFavoriteCommentButtons {
+    @Test
+    public void likeButton(){
+        LoginToWebsite.loginNextBaseHR41();
+        PostPage postPage=new PostPage();
+        postPage.likeButton.click();
+        Assert.assertTrue(postPage.likedMessage.getText().contains("You"));
+
+
+
+    }
 
 
 }
