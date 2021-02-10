@@ -8,6 +8,7 @@ public class test {
     @Test
     public void test1(){
         LoginToWebsite.loginNextBaseHR41();
+        Driver.closeDriver();
 
 
 
