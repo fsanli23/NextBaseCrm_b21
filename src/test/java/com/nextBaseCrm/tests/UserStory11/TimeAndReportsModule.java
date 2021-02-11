@@ -1,5 +1,7 @@
 package com.nextBaseCrm.tests.UserStory11;
 
+import com.nextBaseCrm.utilities.BrowserUtils;
+import com.nextBaseCrm.utilities.Driver;
 import com.nextBaseCrm.utilities.LoginToWebsite;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,10 +17,12 @@ public class TimeAndReportsModule {
 
         // TODO: HR can login to website successfully
         LoginToWebsite.loginNextBaseHR41();
+        BrowserUtils.sleep(1);
 
         //TODO: HR can access to time and report module on the left menu
         allWebElements.timeAndReportModule.click();
         Assert.assertTrue(allWebElements.timeAndReportModule.isDisplayed());
+        BrowserUtils.sleep(1);
 
         //TODO: HR can filter absence chart by day / week / month
         allWebElements.dayFilter.click();
@@ -28,15 +32,20 @@ public class TimeAndReportsModule {
         Assert.assertTrue(allWebElements.dayFilter.isDisplayed());
         Assert.assertTrue(allWebElements.weekFilter.isDisplayed());
         Assert.assertTrue(allWebElements.monthFilter.isDisplayed());
+        BrowserUtils.sleep(1);
 
 
         //TODO: HR can check statistics under workTime
         allWebElements.workTimeButton.click();
         Assert.assertTrue(allWebElements.workTimeButton.isDisplayed());
+        BrowserUtils.sleep(1);
 
         //TODO: HR can check Show start and end times under workTime
         allWebElements.showStartAndEndTimes.click();
         Assert.assertTrue(allWebElements.showStartAndEndTimes.isDisplayed());
+
+        BrowserUtils.sleep(2);
+        Driver.closeDriver();
 
     }
 
@@ -49,10 +58,12 @@ public class TimeAndReportsModule {
 
         // TODO: Marketing can login to website successfully
         LoginToWebsite.loginNextBaseM41();
+        BrowserUtils.sleep(1);
 
         //TODO: Marketing can access to time and report module on the left menu
         allWebElements.timeAndReportModule.click();
         Assert.assertTrue(allWebElements.timeAndReportModule.isDisplayed());
+        BrowserUtils.sleep(1);
 
         //TODO: Marketing can filter absence chart by day / week / month
         allWebElements.dayFilter.click();
@@ -62,16 +73,20 @@ public class TimeAndReportsModule {
         Assert.assertTrue(allWebElements.dayFilter.isDisplayed());
         Assert.assertTrue(allWebElements.weekFilter.isDisplayed());
         Assert.assertTrue(allWebElements.monthFilter.isDisplayed());
+        BrowserUtils.sleep(1);
 
 
         //TODO: Marketing can check statistics under workTime
         allWebElements.workTimeButton.click();
         Assert.assertTrue(allWebElements.workTimeButton.isDisplayed());
+        BrowserUtils.sleep(1);
 
         //TODO: Marketing can check Show start and end times under workTime
         allWebElements.showStartAndEndTimes.click();
         Assert.assertTrue(allWebElements.showStartAndEndTimes.isDisplayed());
 
+        BrowserUtils.sleep(2);
+        Driver.closeDriver();
 
     }
 
@@ -84,10 +99,12 @@ public class TimeAndReportsModule {
 
         // TODO: HelpDesk can login to website successfully
         LoginToWebsite.loginNextBaseHD41();
+        BrowserUtils.sleep(1);
 
         //TODO: HelpDesk can access to time and report module on the left menu
         allWebElements.timeAndReportModule.click();
         Assert.assertTrue(allWebElements.timeAndReportModule.isDisplayed());
+        BrowserUtils.sleep(1);
 
         //TODO: HelpDesk can filter absence chart by day / week / month
         allWebElements.dayFilter.click();
@@ -97,16 +114,20 @@ public class TimeAndReportsModule {
         Assert.assertTrue(allWebElements.dayFilter.isDisplayed());
         Assert.assertTrue(allWebElements.weekFilter.isDisplayed());
         Assert.assertTrue(allWebElements.monthFilter.isDisplayed());
+        BrowserUtils.sleep(1);
 
 
         //TODO: HelpDesk can check statistics under workTime
         allWebElements.workTimeButton.click();
         Assert.assertTrue(allWebElements.workTimeButton.isDisplayed());
+        BrowserUtils.sleep(1);
 
         //TODO: HelpDesk can check Show start and end times under workTime
         allWebElements.showStartAndEndTimes.click();
         Assert.assertTrue(allWebElements.showStartAndEndTimes.isDisplayed());
 
+        BrowserUtils.sleep(2);
+        Driver.closeDriver();
     }
 
 
