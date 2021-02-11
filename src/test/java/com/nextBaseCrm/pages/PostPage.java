@@ -3,15 +3,16 @@ package com.nextBaseCrm.pages;
 import com.nextBaseCrm.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class PostPage {
     public PostPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(id = "bx-ilike-button-BLOG_POST_3447-1612976834")
+    @FindBy(xpath = "(//a[@class='bx-ilike-text'])[1]")
     public WebElement likeButton;
-    @FindBy(id = "feed-post-emoji-top-panel-container-BLOG_POST_3447-1612976834")
+    @FindBy(xpath = "(//div[@class='feed-post-emoji-top-panel-outer'])[1]")
     public WebElement likedMessage;
     @FindBy(id = "blog-post-addc-add-3447")
     public WebElement commentButton;
@@ -23,5 +24,8 @@ public class PostPage {
     public WebElement addToFavorite;
     @FindBy(id = "feed-post-contentview-cnt-BLOG_POST-3447")
     public WebElement eyeIcon;
+    @FindBy(xpath = "//a[@href='/company/personal/user/491/']") //bx-contentview-cnt-popup-cont-BLOG_POST-3447
+    public WebElement personWhoLooked;
+
 
 }
