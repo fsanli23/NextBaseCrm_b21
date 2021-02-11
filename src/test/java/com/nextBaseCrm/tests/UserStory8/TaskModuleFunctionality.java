@@ -17,7 +17,7 @@ public class TaskModuleFunctionality {
         LoginToWebsite.loginNextBaseHR41();
 
         //TODO: Created an object for access to TaskModule @Findby.
-        AllWebElement allWebElement = new AllWebElement();
+        AllWebElementTaskModule allWebElement = new AllWebElementTaskModule();
 
         //TODO: HR click the task module on the left menu.
         allWebElement.TaskModule.click();
@@ -46,7 +46,7 @@ public class TaskModuleFunctionality {
         LoginToWebsite.loginNextBaseM41();
 
         //TODO: Created an object for access to TaskModule @Findby.
-        AllWebElement allWebElement = new AllWebElement();
+        AllWebElementTaskModule allWebElement = new AllWebElementTaskModule();
 
         //TODO: Marketing click the task module on the left menu.
         allWebElement.TaskModule.click();
@@ -72,7 +72,7 @@ public class TaskModuleFunctionality {
         LoginToWebsite.loginNextBaseHD42();
 
         //TODO: Created an object for access to TaskModule @Findby.
-        AllWebElement allWebElement = new AllWebElement();
+        AllWebElementTaskModule allWebElement = new AllWebElementTaskModule();
 
         //TODO: HelpDesk click the task module on the left menu.
         allWebElement.TaskModule.click();
