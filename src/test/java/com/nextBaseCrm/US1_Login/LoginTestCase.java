@@ -4,6 +4,7 @@ import com.nextBaseCrm.pages.LoginPage;
 import com.nextBaseCrm.utilities.BrowserUtils;
 import com.nextBaseCrm.utilities.ConfigurationReader;
 import com.nextBaseCrm.utilities.Driver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTestCase {
@@ -22,10 +23,9 @@ public class LoginTestCase {
         loginPage.loginButton.click();
 
 
-
-
+       Assert.assertTrue(Driver.getDriver().getTitle().contains("Portal"));
+Driver.closeDriver();
     }
-
 
 
     }
