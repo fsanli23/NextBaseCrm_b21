@@ -1,4 +1,4 @@
-package com.nextBaseCrm.tests;
+package com.nextBaseCrm.tests.US12_FilterAndSearchOnActiveStream;
 
 import com.nextBaseCrm.pages.filterAndSearchWebElements;
 import com.nextBaseCrm.utilities.LoginToWebsite;
