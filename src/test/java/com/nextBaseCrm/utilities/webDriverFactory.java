@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class webDriverFactory {
 
+
     public static WebDriver getDriver(String browserType){
         if (browserType.equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
@@ -26,4 +27,14 @@ public class webDriverFactory {
 
 
     
+
+
+
+    
+
+
+
+
+
+
 }
