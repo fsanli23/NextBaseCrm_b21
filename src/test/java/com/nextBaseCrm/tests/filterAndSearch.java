@@ -3,7 +3,7 @@ package com.nextBaseCrm.tests;
 import com.nextBaseCrm.pages.filterAndSearchWebElements;
 import com.nextBaseCrm.utilities.LoginToWebsite;
 import org.apache.hc.core5.util.Asserts;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class filterAndSearch {
@@ -72,3 +72,7 @@ public class filterAndSearch {
 
 
 }
+
+
+
+

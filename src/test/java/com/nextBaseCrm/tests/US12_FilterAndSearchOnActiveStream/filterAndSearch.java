@@ -3,7 +3,7 @@ package com.nextBaseCrm.tests.US12_FilterAndSearchOnActiveStream;
 import com.nextBaseCrm.pages.filterAndSearchWebElements;
 import com.nextBaseCrm.utilities.LoginToWebsite;
 import org.apache.hc.core5.util.Asserts;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class filterAndSearch {
@@ -32,7 +32,7 @@ public class filterAndSearch {
     public void search() {//user can make search on the search and filter box
         LoginToWebsite.loginNextBaseHR41();
         filterAndSearch.SearchAndFilterInBox.sendKeys("hello");
-        Assert.assertTrue(filterAndSearch.SearchResult.getText().equalsIgnoreCase("hello"));
+       Assert.assertTrue(filterAndSearch.SearchResult.getText().equalsIgnoreCase("hello"));
     }
 
     @Test
@@ -71,4 +71,10 @@ public class filterAndSearch {
     }
 
 
+
+
 }
+
+
+
+
