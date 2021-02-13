@@ -1,4 +1,4 @@
-package com.nextBaseCrm.tests.US12_FilterAndSearchOnActiveStream;
+package com.nextBaseCrm.tests;
 
 import com.nextBaseCrm.pages.filterAndSearchWebElements;
 import com.nextBaseCrm.utilities.LoginToWebsite;
@@ -32,7 +32,7 @@ public class filterAndSearch {
     public void search() {//user can make search on the search and filter box
         LoginToWebsite.loginNextBaseHR41();
         filterAndSearch.SearchAndFilterInBox.sendKeys("hello");
-       Assert.assertTrue(filterAndSearch.SearchResult.getText().equalsIgnoreCase("hello"));
+        Assert.assertTrue(filterAndSearch.SearchResult.getText().equalsIgnoreCase("hello"));
     }
 
     @Test
@@ -69,8 +69,6 @@ public class filterAndSearch {
         filterAndSearch.Work.click();
         filterAndSearch.SearchButton.click();
     }
-
-
 
 
 }
