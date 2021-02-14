@@ -16,7 +16,11 @@ public class LoginPage {
     public WebElement inputPassword;
     @FindBy(xpath = "//input[@type='submit']")
     public WebElement loginButton;
-
-
+    @FindBy(id = "USER_REMEMBER")
+    public WebElement rememberMe;
+    @FindBy(xpath = "//a[@class='login-link-forgot-pass']")
+    public WebElement ForgotPassword;
+    @FindBy(xpath = "//button[@value='Reset password']")
+    public WebElement ResetPassword;
 }
 
