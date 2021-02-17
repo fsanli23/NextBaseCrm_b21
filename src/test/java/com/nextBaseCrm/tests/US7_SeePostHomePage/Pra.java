@@ -19,7 +19,10 @@ public class Pra {
         driver.findElement(By.name("USER_PASSWORD"))
         .sendKeys("UserUser");
         driver.findElement(By.className("login-btn")).click();
-        driver.findElement(By.id("microoPostFormLHE_blogPostForm_inner")).click();
+        //driver.findElement(By.id("microoPostFormLHE_blogPostForm_inner")).click();
+        driver.findElement(By.id("user-block")).click();
+        driver.findElement(By.linkText("Log out")).click();
+
 
     }
 }
