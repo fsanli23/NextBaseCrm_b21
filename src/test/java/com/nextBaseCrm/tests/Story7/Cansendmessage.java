@@ -5,10 +5,10 @@ import com.nextBaseCrm.pages.Messege;
 import com.nextBaseCrm.utilities.ConfigurationReader;
 import com.nextBaseCrm.utilities.Driver;
 import com.nextBaseCrm.utilities.LoginToWebsite;
-import org.junit.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 public class Cansendmessage {
     @Test
