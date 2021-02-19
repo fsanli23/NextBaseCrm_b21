@@ -4,7 +4,6 @@ import com.nextBaseCrm.pages.LoginPage;
 import com.nextBaseCrm.utilities.BrowserUtils;
 import com.nextBaseCrm.utilities.ConfigurationReader;
 import com.nextBaseCrm.utilities.Driver;
-import com.sun.tools.corba.se.idl.constExpr.Negative;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

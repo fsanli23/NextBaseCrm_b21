@@ -3,7 +3,7 @@ package com.nextBaseCrm.tests.story13;
 import com.nextBaseCrm.pages.Logoutpage;
 import com.nextBaseCrm.pages.Messege;
 import com.nextBaseCrm.utilities.LoginToWebsite;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class LogOut {
 
